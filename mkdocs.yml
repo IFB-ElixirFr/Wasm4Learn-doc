@@ -1,0 +1,39 @@
+site_name: R WASM platform documentation
+repo_url: https://github.com/IFB-ElixirFr/R_WASM_doc
+repo_name: IFB-ElixirFr/R_WASM_doc
+copyright: IFB 2023-Present | Licenced under Creative Commons by Share Alike 4.0 International
+
+theme:
+  name: material
+  features:
+    - navigation.footer
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# page tree
+nav:
+    - Home: index.md
+    - Deployment:
+      - Installation: Deployment/deployment_01_install.md
+      - Dev server: Deployment/deployment_02_devServer.md
+      - Send to prod: Deployment/deployment_03_prodServer.md
+    - Components:
+      - Introduction: Components/components_01_intro.md
+      - Quizz: Components/components_02_quizz.md
+      - Order propositions: Components/components_03_orderProps.md
+      - Exercice: Components/components_04_exo.md
+      - Execute code: Components/components_05_execute.md

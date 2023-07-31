@@ -1,0 +1,20 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read # for checkout
+
+jobs:
+  release:
+    name: Release
+    image: node:19-buster-slim
+    before_script:
+    - apt-get update && apt-get install -y --no-install-recommends git-core ca-certificates
+    - npm install -g semantic-release @semantic-release/github @semantic-release/changelog conventional-changelog-conventionalcommits @semantic-release/commit-analyzer @semantic-release/git
+  script:
+    - semantic-release
+  only:
+    - main
