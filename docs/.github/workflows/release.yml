@@ -7,6 +7,7 @@ on:
 permissions:
   contents: read # for checkout
 
+
 jobs:
   release:
     name: Release
