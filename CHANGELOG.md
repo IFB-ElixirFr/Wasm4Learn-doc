@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/compare/v1.0.0...v1.0.1) (2023-08-29)
+
+
+### Bug Fixes
+
+* update README.md ([7d09f5c](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/commit/7d09f5ca215573bd0f58b2e7f3560b5d9e59efbc))
+
 ## 1.0.0 (2023-07-31)
 
 
