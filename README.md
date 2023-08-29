@@ -1,4 +1,4 @@
-# R WASM platform documentation
+# wasm4learn documentation
 
 ## Project layout
 
@@ -74,7 +74,7 @@ Read more at:
 
 If you use our guide, please cite us :
 
-IFB-ElixirFr, Sandbox.bio hosted by IFB documentation, https://github.com/IFB-ElixirFr/R_WASM_doc
+IFB-ElixirFr, Wasm4learn documentation, https://github.com/IFB-ElixirFr/Wasm4Learn-doc
 
 A DOI with Zenodo is comming.
 
