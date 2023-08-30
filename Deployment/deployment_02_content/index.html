@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../dev_Wasm4Learn/">
+        <link rel="prev" href="../deployment_01_tool/">
       
       
-        <link rel="next" href="../dev_Wasm4Learn-doc/">
+        <link rel="next" href="../deployment_03_doc/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
@@ -250,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dev_Wasm4Learn/" class="md-nav__link">
+      <a href="../deployment_01_tool/" class="md-nav__link">
         Tool
       </a>
     </li>
@@ -346,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dev_Wasm4Learn-doc/" class="md-nav__link">
+      <a href="../deployment_03_doc/" class="md-nav__link">
         Doc
       </a>
     </li>
@@ -409,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Components/components_02_quiz/" class="md-nav__link">
+      <a href="../../Components/components_02_quizz/" class="md-nav__link">
         Quizz
       </a>
     </li>
@@ -560,28 +560,44 @@
 <h1 id="developpement-of-wasm4learn-content">Developpement of Wasm4Learn content</h1>
 <h2 id="project-layout">Project layout</h2>
 <div class="highlight"><pre><span></span><code>...
-<span class="w">    </span>content/
-<span class="w">        </span>r/<span class="w">                  </span><span class="c1"># Langage name </span>
-<span class="w">            </span>_dir.yml<span class="w">        </span><span class="c1"># Metadata for language                 </span>
-<span class="w">            </span>section1/<span class="w">       </span><span class="c1"># Section name</span>
-<span class="w">                </span>_dir.yml<span class="w">    </span><span class="c1"># Metadata for section</span>
-<span class="w">                </span><span class="m">1</span>.toto.md<span class="w">    </span><span class="c1"># Content file</span>
-<span class="w">                </span><span class="m">2</span>.tutu.md<span class="w">    </span><span class="c1"># Content file</span>
-<span class="w">                </span><span class="m">3</span>.tata.md<span class="w">    </span><span class="c1"># Content file</span>
-<span class="w">            </span>section2/<span class="w">       </span><span class="c1"># Section name</span>
-<span class="w">                </span>...<span class="w">       </span><span class="c1"># Other markdown pages, images and other files.</span>
-<span class="w">        </span>python/<span class="w"> </span>
-<span class="w">            </span>_dir.yml<span class="w">        </span><span class="c1"># Metadata for language                 </span>
-<span class="w">            </span>section1/<span class="w">       </span><span class="c1"># Section name</span>
-<span class="w">                </span>_dir.yml<span class="w">    </span><span class="c1"># Metadata for section</span>
-<span class="w">                </span><span class="m">1</span>.toto.md<span class="w">    </span><span class="c1"># Content file</span>
-<span class="w">                </span><span class="m">2</span>.tutu.md<span class="w">    </span><span class="c1"># Content file</span>
-<span class="w">                </span><span class="m">3</span>.tata.md<span class="w">    </span><span class="c1"># Content file</span>
-<span class="w">            </span>section2/<span class="w">       </span><span class="c1"># Section name</span>
-<span class="w">                </span>...<span class="w">       </span><span class="c1"># Other markdown pages, images and other files.</span>
-<span class="w">        </span>newLanguage/
+/content
+<span class="w">    </span>/language<span class="w">                                       </span><span class="c1"># the programming languages implemented</span>
+<span class="w">        </span>/R<span class="w">                                          </span><span class="c1"># Langage name </span>
+<span class="w">            </span>/tutorials
+<span class="w">                </span>/1.tuto
+<span class="w">                    </span>_dir.yml
+<span class="w">                    </span><span class="m">1</span>.tuto_content.md
+<span class="w">                    </span><span class="m">2</span>.tuto_content.md
+<span class="w">                    </span>...
+<span class="w">                </span><span class="m">2</span>.tuto/
+<span class="w">                </span>...
+<span class="w">            </span>/classes
+<span class="w">                </span>/images<span class="w">                             </span><span class="c1"># images used in the classes</span>
+<span class="w">                </span><span class="m">1</span>.class.md
+<span class="w">                </span><span class="m">2</span>.class.md
+<span class="w">                </span>...
+<span class="w">            </span>_dir.yaml<span class="w">                               </span><span class="c1"># Metadata for language</span>
+<span class="w">        </span>/js
 <span class="w">            </span>...
-...
+<span class="w">        </span>/python
+<span class="w">            </span>...
+<span class="w">    </span>/learning-path
+<span class="w">        </span>/1.formation-language<span class="w">          </span>
+<span class="w">            </span>_dir.yml<span class="w">                                    </span><span class="c1"># Metadata for the learning path</span>
+<span class="w">            </span><span class="m">1</span>.tuto_content.md
+<span class="w">            </span>...<span class="w"> </span>
+<span class="w">        </span>...
+<span class="w">    </span>/tool<span class="w">                                           </span><span class="c1"># other implemented tools     </span>
+<span class="w">        </span>/gawk
+<span class="w">            </span>_dir.yml<span class="w">                                </span><span class="c1"># Metadata for the tool</span>
+<span class="w">            </span>/tutorials
+<span class="w">                </span>/1.tuto_tool
+<span class="w">                    </span>_dir.yml
+<span class="w">                    </span><span class="m">1</span>.tuto_tool_content.md
+<span class="w">                    </span><span class="m">2</span>.tuto_tool_content.md
+<span class="w">        </span>/grep
+<span class="w">            </span>...
+<span class="w">        </span>...
 </code></pre></div>
 <h3 id="example-of-_diryml-file-for-language">Example of <code>_dir.yml</code> file for language</h3>
 <div class="highlight"><pre><span></span><code><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;R&#39;</span>
@@ -590,7 +606,7 @@
 </code></pre></div>
 <h3 id="example-of-_diryml-file-for-section">Example of <code>_dir.yml</code> file for section</h3>
 <div class="highlight"><pre><span></span><code><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Les</span><span class="nv"> </span><span class="s">premiers</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">en</span><span class="nv"> </span><span class="s">R&#39;</span>
-<span class="nt">description </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Lorem</span><span class="nv"> </span><span class="s">ipsum</span><span class="nv"> </span><span class="s">dolor</span><span class="nv"> </span><span class="s">sit</span><span class="nv"> </span><span class="s">amet,</span><span class="nv"> </span><span class="s">consectetur</span><span class="nv"> </span><span class="s">adipiscing</span><span class="nv"> </span><span class="s">elit.</span><span class="nv"> </span><span class="s">Sed</span><span class="nv"> </span><span class="s">non</span><span class="nv"> </span><span class="s">risus.</span><span class="nv"> </span><span class="s">Suspendisse</span><span class="nv"> </span><span class="s">lectus</span><span class="nv"> </span><span class="s">tortor,</span><span class="nv"> </span><span class="s">dignissim</span><span class="nv"> </span><span class="s">sit</span><span class="nv"> </span><span class="s">amet,</span><span class="nv"> </span><span class="s">adipiscing</span><span class="nv"> </span><span class="s">nec,</span><span class="nv"> </span><span class="s">ultricies</span><span class="nv"> </span><span class="s">sed,</span><span class="nv"> </span><span class="s">dolor.</span><span class="nv"> </span><span class="s">&quot;</span>
+<span class="nt">navigation.description </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Lorem</span><span class="nv"> </span><span class="s">ipsum</span><span class="nv"> </span><span class="s">dolor</span><span class="nv"> </span><span class="s">sit</span><span class="nv"> </span><span class="s">amet,</span><span class="nv"> </span><span class="s">consectetur</span><span class="nv"> </span><span class="s">adipiscing</span><span class="nv"> </span><span class="s">elit.</span><span class="nv"> </span><span class="s">Sed</span><span class="nv"> </span><span class="s">non</span><span class="nv"> </span><span class="s">risus.</span><span class="nv"> </span><span class="s">Suspendisse</span><span class="nv"> </span><span class="s">lectus</span><span class="nv"> </span><span class="s">tortor,</span><span class="nv"> </span><span class="s">dignissim</span><span class="nv"> </span><span class="s">sit</span><span class="nv"> </span><span class="s">amet,</span><span class="nv"> </span><span class="s">adipiscing</span><span class="nv"> </span><span class="s">nec,</span><span class="nv"> </span><span class="s">ultricies</span><span class="nv"> </span><span class="s">sed,</span><span class="nv"> </span><span class="s">dolor.</span><span class="nv"> </span><span class="s">&quot;</span>
 <span class="nt">navigation.belt</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;white&quot;</span>
 <span class="nt">navigation.tags</span><span class="p">:</span>
@@ -621,7 +637,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../dev_Wasm4Learn/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tool" rel="prev">
+          <a href="../deployment_01_tool/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tool" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -637,7 +653,7 @@
         
         
           
-          <a href="../dev_Wasm4Learn-doc/" class="md-footer__link md-footer__link--next" aria-label="Next: Doc" rel="next">
+          <a href="../deployment_03_doc/" class="md-footer__link md-footer__link--next" aria-label="Next: Doc" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next

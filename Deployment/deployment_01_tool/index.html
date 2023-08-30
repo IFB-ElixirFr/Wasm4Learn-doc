@@ -12,7 +12,7 @@
         <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../dev_Wasm4Learn-content/">
+        <link rel="next" href="../deployment_02_content/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
@@ -372,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dev_Wasm4Learn-content/" class="md-nav__link">
+      <a href="../deployment_02_content/" class="md-nav__link">
         Content
       </a>
     </li>
@@ -386,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dev_Wasm4Learn-doc/" class="md-nav__link">
+      <a href="../deployment_03_doc/" class="md-nav__link">
         Doc
       </a>
     </li>
@@ -449,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Components/components_02_quiz/" class="md-nav__link">
+      <a href="../../Components/components_02_quizz/" class="md-nav__link">
         Quizz
       </a>
     </li>
@@ -648,19 +648,29 @@
 <span class="w">    </span>...<span class="w">                 </span><span class="c1"># function shared in all project</span>
 /layouts
 <span class="w">    </span>default.vue<span class="w">         </span><span class="c1"># layout of the application</span>
+<span class="w">    </span>home.vue<span class="w">            </span><span class="c1"># layout of home page</span>
 /pages
 <span class="w">    </span>index.vue<span class="w">           </span><span class="c1"># home page</span>
-<span class="w">    </span>/<span class="o">[</span>lang<span class="o">]</span>
+<span class="w">    </span>/language/<span class="o">[</span>lang<span class="o">]</span>/
 <span class="w">        </span>index.vue<span class="w">       </span><span class="c1"># home page of language</span>
 <span class="w">        </span><span class="o">[</span>...slug<span class="o">]</span>.vue<span class="w">   </span><span class="c1"># How display content</span>
+<span class="w">    </span>/learning-path/
+<span class="w">        </span>/all/index.vue<span class="w">  </span><span class="c1"># All learning-path available</span>
+<span class="w">        </span><span class="o">[</span>...slug<span class="o">]</span>.vue<span class="w">   </span><span class="c1"># How display content</span>
+<span class="w">    </span>/tool/<span class="o">[</span>tool<span class="o">]</span>/
+<span class="w">        </span>index.vue<span class="w">       </span><span class="c1"># home page of language</span>
+<span class="w">        </span><span class="o">[</span>...slug<span class="o">]</span>.vue<span class="w">   </span><span class="c1"># How display content</span>
+<span class="w">    </span>about.vue<span class="w">           </span><span class="c1"># About page</span>
+<span class="w">    </span>...<span class="w"> </span>
 /plugins<span class="w">                </span><span class="c1"># plugings used by application</span>
 <span class="w">    </span>vuetify.js
 <span class="w">    </span>markdownit.ts
 /publics<span class="w">                </span><span class="c1"># assets available in all web site</span>
-<span class="w">    </span>...<span class="w"> </span>
+<span class="w">    </span>...
+<span class="w">    </span>man/<span class="w">                </span><span class="c1"># Man pages </span>
 /store
 <span class="w">    </span>...<span class="w">                 </span><span class="c1"># Store declaration</span>
-nuxt.config.ts<span class="w">           </span><span class="c1"># configuration file</span>
+nuxt.config.ts<span class="w">          </span><span class="c1"># configuration file</span>
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -701,7 +711,7 @@ nuxt.config.ts<span class="w">           </span><span class="c1"># configuration
 <div class="highlight"><pre><span></span><code>yarn<span class="w"> </span>dev
 </code></pre></div>
 <h3 id="production">Production</h3>
-<p>Build the application and send in production (GitHub pages):</p>
+<p>Build the application for production:</p>
 <div class="highlight"><pre><span></span><code>yarn<span class="w"> </span>deploy
 </code></pre></div>
 
@@ -741,7 +751,7 @@ nuxt.config.ts<span class="w">           </span><span class="c1"># configuration
         
         
           
-          <a href="../dev_Wasm4Learn-content/" class="md-footer__link md-footer__link--next" aria-label="Next: Content" rel="next">
+          <a href="../deployment_02_content/" class="md-footer__link md-footer__link--next" aria-label="Next: Content" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
