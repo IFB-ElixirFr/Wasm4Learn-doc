@@ -24,7 +24,7 @@
 ```bash
     mkdocs.yml         # The configuration file.
     docs/
-        Deployement/   # 
+        Deployement/   # deployement steps for each repository
             ...
         Components/    # Component usable in the (md) files
             ...
@@ -71,7 +71,7 @@ Add/update markdown files in docs folder
 mkdocs build
 ```
 
-6. Deploy
+7. Deploy
 
 **Only if previous command is Ok !**
 
@@ -86,6 +86,8 @@ Don't forget to export the conda environment (env_docs.yml) using the command li
 conda env export --no-builds env_docs.yml
 ```
 
+> **Reminder :**
+> Don't forget to commit and push your changed md files in the main branch 
 
 
 Read more at:
@@ -104,7 +106,7 @@ A DOI with Zenodo is comming.
 ## Contributors
 
 * [Thomas Denecker](https://github.com/thomasdenecker) <a itemprop="sameAs" content="https://orcid.org/0000-0003-1421-7641" href="https://orcid.org/0000-0003-1421-7641" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
-
+* [Imane Messak](https://gitlab.com/imanemessak) <a itemprop="sameAs" content="https://orcid.org/0000-0002-1654-6652" href="https://orcid.org/0000-0002-1654-6652" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
 
 ## Contributing
 Please, see the [CONTRIBUTING](CONTRIBUTING.md) file.
