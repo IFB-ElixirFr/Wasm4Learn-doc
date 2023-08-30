@@ -1,4 +1,23 @@
-# wasm4learn documentation
+# Wasm4Learn documentation
+
+## Overview
+
+**Language**
+
+[![Made with Markdown](https://img.shields.io/badge/Made%20with-Markdown-blue)](https://squidfunk.github.io/mkdocs-material/)
+
+**Continuous Integration**
+
+![Release workflow](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/actions/workflows/release.yml/badge.svg)
+
+**Questions**
+
+[:speech_balloon: Ask a question](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/issues/new)
+[:book: Report a problem or an idea](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/issues/new)
+
+**Contribution**
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 ## Project layout
 
@@ -25,7 +44,7 @@ To work locally with this project, you'll have to follow the steps below:
 2. Create and activate conda env
 
 ```bash
-cd R_WASM_doc
+cd Wasm4Learn-doc
 conda env create -f env_docs.yml
 conda activate docs
 ```
