@@ -28,12 +28,13 @@ markdown_extensions:
 nav:
     - Home: index.md
     - Deployment:
-      - Installation: Deployment/deployment_01_install.md
-      - Dev server: Deployment/deployment_02_devServer.md
-      - Send to prod: Deployment/deployment_03_prodServer.md
+      - Tool: Deployment/deployment_01_tool.md
+      - Content: Deployment/deployment_02_content.md
+      - Doc: Deployment/deployment_03_doc.md
     - Components:
       - Introduction: Components/components_01_intro.md
       - Quizz: Components/components_02_quizz.md
       - Order propositions: Components/components_03_orderProps.md
       - Exercice: Components/components_04_exo.md
-      - Execute code: Components/components_05_execute.md
+      - Admonition: Components/components_05_admonition.md
+      - Code: Components/components_06_code.md
