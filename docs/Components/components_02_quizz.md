@@ -1,4 +1,12 @@
-## Simple
+# Quiz
+
+## Goal
+
+Establish a simple or multiple-choice questionnaire.
+
+## Code
+
+### Simple
 
 ```
 ::Quiz
@@ -14,7 +22,7 @@ choices:
 ::
 ```
 
-## Multiple
+### Multiple
 
 ```
 ::Quiz
@@ -29,3 +37,13 @@ choices:
 ---
 ::
 ```
+
+## Result
+
+### Simple
+
+![simple](./images/simple.png)
+
+### Multiple
+
+![multiple](./images/multiple.png)

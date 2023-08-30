@@ -4,8 +4,11 @@ authors:
 - family-names: "Denecker"
   given-names: "Thomas"
   orcid: "https://orcid.org/0000-0003-1421-7641"
-title: "IFB-ElixirFr/R_WASM_doc"
+- family-names: "Messak"
+  given-names: "Imane"
+  orcid: "https://orcid.org/0000-0002-1654-6652"
+title: "IFB-ElixirFr/Wasm4Learn-doc"
 version: 1.0.0
 doi: 
 date-released: 2023-07-24
-url: "https://github.com/IFB-ElixirFr/R_WASM_doc"
+url: "https://github.com/IFB-ElixirFr/Wasm4Learn-doc"
