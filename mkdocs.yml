@@ -1,6 +1,6 @@
-site_name: R WASM platform documentation
-repo_url: https://github.com/IFB-ElixirFr/R_WASM_doc
-repo_name: IFB-ElixirFr/R_WASM_doc
+site_name: Wasm4Learn platform documentation
+repo_url: https://github.com/IFB-ElixirFr/Wasm4Learn-doc
+repo_name: IFB-ElixirFr/Wasm4Learn-doc
 copyright: IFB 2023-Present | Licenced under Creative Commons by Share Alike 4.0 International
 
 theme:
