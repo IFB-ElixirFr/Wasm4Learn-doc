@@ -3,14 +3,19 @@
 ## Project layout
 
 ```bash
-    mkdocs.yml         # The configuration file.
+    mkdocs.yml                  # The configuration file.
     docs/
-        Deployement/   # 
+        Deployement/            # contains the .md files for the deployement of each repository
+            deployement_01_.md
+            deployement_02_.md
             ...
-        Components/    # Component usable in the (md) files
+            images/             # images used in the .md files
+        Components/             # exemples of the component usable in the .md files
+            componenets_01_.md
+            componenets_02_.md
             ...
-        index.md       # The documentation homepage.
-        ...            # Other markdown pages, images and other files.
+        index.md                # The documentation homepage.
+
 ```
 
 ## Developpement
