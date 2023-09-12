@@ -18,50 +18,62 @@
 
 ```
 
-## Developpement
+## Setup
 
 To work locally with this project, you'll have to follow the steps below:
 
-### Install dependencies
+### Step 1
+Fork, clone or download this project
 
-1. Fork, clone or download this project
-2. Create and activate conda env
+```bash
+git clone git@github.com:IFB-ElixirFr/Wasm4Learn-doc.git
+```
+
+### Step 2
+Create a conda env
 
 ```bash
 cd Wasm4Learn-doc
 conda env create -f env_docs.yml
+```
+
+### Step 3
+Activate the environment and you are good to go:
+
+```bash
 conda activate docs
 ```
 
-### Development Server
+## Step 3 
 
-1. Preview your project
+- Preview your project
 
 ```bash
 mkdocs serve
 ```
 
-Note : *The site can be accessed under http://localhost:8000/*
+!!! note
+    The site can be accessed under `http://localhost:8000` 
 
-2. Add content
+- Add content
 
 Add/update markdown files in docs folder
 
 ### Production
 
-1. Test
+1. Test/build the documentation site
 
-```bash
-mkdocs build
-```
+    ```bash
+    mkdocs build
+    ```
 
-2. Deploy
+2. Deploy the site on the github pages
 
-**Only if the previous command is Ok !**
+    **Only if the previous command is Ok !**
 
-```bash
-mkdocs gh-deploy --force
-```
+    ```bash
+    mkdocs gh-deploy --force
+    ```
 
 If you add an extension to (Material) MKdocs that requires the installation of a new package.
 Don't forget to export the conda environment (env_docs.yml) using the command line below.
