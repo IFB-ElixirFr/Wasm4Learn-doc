@@ -319,26 +319,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#developpement" class="md-nav__link">
-    Developpement
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
-    <nav class="md-nav" aria-label="Developpement">
+    <nav class="md-nav" aria-label="Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-dependencies" class="md-nav__link">
-    Install dependencies
+  <a href="#step-1" class="md-nav__link">
+    Step 1
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#development-server" class="md-nav__link">
-    Development Server
+  <a href="#step-2" class="md-nav__link">
+    Step 2
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    Step 3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3_1" class="md-nav__link">
+    Step 3
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#production" class="md-nav__link">
@@ -520,26 +540,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#developpement" class="md-nav__link">
-    Developpement
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
-    <nav class="md-nav" aria-label="Developpement">
+    <nav class="md-nav" aria-label="Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-dependencies" class="md-nav__link">
-    Install dependencies
+  <a href="#step-1" class="md-nav__link">
+    Step 1
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#development-server" class="md-nav__link">
-    Development Server
+  <a href="#step-2" class="md-nav__link">
+    Step 2
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    Step 3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3_1" class="md-nav__link">
+    Step 3
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#production" class="md-nav__link">
@@ -586,40 +626,49 @@
 <span class="w">            </span>...
 <span class="w">        </span>index.md<span class="w">                </span><span class="c1"># The documentation homepage.</span>
 </code></pre></div>
-<h2 id="developpement">Developpement</h2>
+<h2 id="setup">Setup</h2>
 <p>To work locally with this project, you'll have to follow the steps below:</p>
-<h3 id="install-dependencies">Install dependencies</h3>
-<ol>
-<li>Fork, clone or download this project</li>
-<li>Create and activate conda env</li>
-</ol>
+<h3 id="step-1">Step 1</h3>
+<p>Fork, clone or download this project</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:IFB-ElixirFr/Wasm4Learn-doc.git
+</code></pre></div>
+<h3 id="step-2">Step 2</h3>
+<p>Create a conda env</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>Wasm4Learn-doc
 conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>env_docs.yml
-conda<span class="w"> </span>activate<span class="w"> </span>docs
 </code></pre></div>
-<h3 id="development-server">Development Server</h3>
-<ol>
+<h3 id="step-3">Step 3</h3>
+<p>Activate the environment and you are good to go:</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>docs
+</code></pre></div>
+<h2 id="step-3_1">Step 3</h2>
+<ul>
 <li>Preview your project</li>
-</ol>
+</ul>
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
 </code></pre></div>
-<p>Note : <em>The site can be accessed under http://localhost:8000/</em></p>
-<ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The site can be accessed under <code>http://localhost:8000</code> </p>
+</div>
+<ul>
 <li>Add content</li>
-</ol>
+</ul>
 <p>Add/update markdown files in docs folder</p>
 <h3 id="production">Production</h3>
 <ol>
-<li>Test</li>
-</ol>
+<li>
+<p>Test/build the documentation site</p>
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>build
 </code></pre></div>
-<ol>
-<li>Deploy</li>
-</ol>
+</li>
+<li>
+<p>Deploy the site on the github pages</p>
 <p><strong>Only if the previous command is Ok !</strong></p>
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy<span class="w"> </span>--force
 </code></pre></div>
+</li>
+</ol>
 <p>If you add an extension to (Material) MKdocs that requires the installation of a new package.
 Don't forget to export the conda environment (env_docs.yml) using the command line below.</p>
 <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--no-builds<span class="w"> </span>env_docs.yml

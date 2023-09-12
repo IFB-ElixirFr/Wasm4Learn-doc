@@ -288,33 +288,41 @@
     Project layout
   </a>
   
-    <nav class="md-nav" aria-label="Project layout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#highlight-on-nuxtconfigts" class="md-nav__link">
-    Highlight on nuxt.config.ts
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
-    <nav class="md-nav" aria-label="Highlight on nuxt.config.ts">
+    <nav class="md-nav" aria-label="Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nuxt-content-and-github" class="md-nav__link">
-    Nuxt content and GitHub
+  <a href="#step-1" class="md-nav__link">
+    Step 1
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#github-pages" class="md-nav__link">
-    Github pages
+  <a href="#step-2" class="md-nav__link">
+    Step 2
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    Step 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production" class="md-nav__link">
+    Production
+  </a>
   
 </li>
         
@@ -324,30 +332,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#developpement" class="md-nav__link">
-    Developpement
+  <a href="#nuxt-content-and-github" class="md-nav__link">
+    Nuxt content and GitHub
   </a>
   
-    <nav class="md-nav" aria-label="Developpement">
+    <nav class="md-nav" aria-label="Nuxt content and GitHub">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-dependencies" class="md-nav__link">
-    Install dependencies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development-server" class="md-nav__link">
-    Development Server
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#production" class="md-nav__link">
-    Production
+  <a href="#github-pages" class="md-nav__link">
+    Github pages
   </a>
   
 </li>
@@ -550,33 +544,41 @@
     Project layout
   </a>
   
-    <nav class="md-nav" aria-label="Project layout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#highlight-on-nuxtconfigts" class="md-nav__link">
-    Highlight on nuxt.config.ts
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
-    <nav class="md-nav" aria-label="Highlight on nuxt.config.ts">
+    <nav class="md-nav" aria-label="Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nuxt-content-and-github" class="md-nav__link">
-    Nuxt content and GitHub
+  <a href="#step-1" class="md-nav__link">
+    Step 1
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#github-pages" class="md-nav__link">
-    Github pages
+  <a href="#step-2" class="md-nav__link">
+    Step 2
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    Step 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production" class="md-nav__link">
+    Production
+  </a>
   
 </li>
         
@@ -586,30 +588,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#developpement" class="md-nav__link">
-    Developpement
+  <a href="#nuxt-content-and-github" class="md-nav__link">
+    Nuxt content and GitHub
   </a>
   
-    <nav class="md-nav" aria-label="Developpement">
+    <nav class="md-nav" aria-label="Nuxt content and GitHub">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-dependencies" class="md-nav__link">
-    Install dependencies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development-server" class="md-nav__link">
-    Development Server
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#production" class="md-nav__link">
-    Production
+  <a href="#github-pages" class="md-nav__link">
+    Github pages
   </a>
   
 </li>
@@ -639,6 +627,10 @@
 
 <h1 id="developpement-of-wasm4learn">Developpement of Wasm4Learn</h1>
 <h2 id="project-layout">Project layout</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In public folder, webR files must be duplicated like content r folder</p>
+</div>
 <div class="highlight"><pre><span></span><code>...
 /components
 <span class="w">    </span>/content
@@ -672,47 +664,64 @@
 <span class="w">    </span>...<span class="w">                 </span><span class="c1"># Store declaration</span>
 nuxt.config.ts<span class="w">          </span><span class="c1"># configuration file</span>
 </code></pre></div>
+<h2 id="setup">Setup</h2>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>In public folder, webR files must be duplicated like content r folder</p>
+<p class="admonition-title">Requirement</p>
+<p>Make sure you have already installed <code>yarn</code> before starting the setup.</p>
 </div>
-<h3 id="highlight-on-nuxtconfigts">Highlight on <code>nuxt.config.ts</code></h3>
-<h4 id="nuxt-content-and-github">Nuxt content and GitHub</h4>
-<p>Configuring Nuxt content to fetch content from GitHub</p>
+<h3 id="step-1">Step 1</h3>
+<p>Fork, clone or download this project</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:IFB-ElixirFr/Wasm4Learn.git
+</code></pre></div>
+<h3 id="step-2">Step 2</h3>
+<p>Install the dependencies</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>Wasm4Learn
+yarn<span class="w"> </span>install
+</code></pre></div>
+<h3 id="step-3">Step 3</h3>
+<p>Once all the dependencies have been installed, launch the application</p>
+<div class="highlight"><pre><span></span><code>yarn<span class="w"> </span>dev
+</code></pre></div>
+<p>If your teminal displays something similar to this:</p>
+<div class="highlight"><pre><span></span><code>Nuxi<span class="w"> </span><span class="m">3</span>.6.52:54:41<span class="w"> </span>PM
+Nuxt<span class="w"> </span><span class="m">3</span>.6.5<span class="w"> </span>with<span class="w"> </span>Nitro<span class="w"> </span><span class="m">2</span>.5.22:54:41<span class="w"> </span>PM
+<span class="w">                                                                                                                                                                                </span><span class="m">2</span>:54:42<span class="w"> </span>PM
+&gt;<span class="w"> </span>Local:<span class="w">    </span>http://localhost:3000/Wasm4Learn/<span class="w"> </span>
+&gt;<span class="w"> </span>Network:<span class="w">  </span>http://172.16.189.130:3000/Wasm4Learn/
+
+ℹ<span class="w"> </span><span class="o">[</span>content-assets<span class="o">]</span><span class="w"> </span>Websocket<span class="w"> </span>listening<span class="w"> </span>on<span class="w"> </span><span class="s2">&quot;ws://localhost:4001/&quot;</span><span class="w">   </span>
+</code></pre></div>
+<p>Well done 🥳 !!
+the application is now running on <code>http://localhost:3000</code> </p>
+<h3 id="production">Production</h3>
+<p>Build the application for production:</p>
+<p><div class="highlight"><pre><span></span><code>yarn<span class="w"> </span>deploy
+</code></pre></div>
+Check out the <a href="https://nuxt.com/docs/getting-started/deployment">deployment documentation</a> for more information.</p>
+<h2 id="nuxt-content-and-github">Nuxt content and GitHub</h2>
+<p>Configurate the <code>nuxt.config.ts</code> file in order for Nuxt content to fetch content from GitHub</p>
 <div class="highlight"><pre><span></span><code><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">sources</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">github</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">github</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nx">prefix</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Prefix for routes used to query contents</span>
 <span class="w">        </span><span class="nx">driver</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;github&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Driver used to fetch contents (view unstorage documentation)</span>
 <span class="w">        </span><span class="nx">repo</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;IFB-ElixirFr/Wasm4Learn-content&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="nx">branch</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;main&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="nx">dir</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;content&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Directory where contents are located. It could be a subdirectory of the repository.</span>
 <span class="w">        </span><span class="c1">// Imagine you have a blog inside your content folder. You can set this option to `content/blog` with the prefix option to `/blog` to avoid conflicts with local files.</span>
-<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
+<p>for more infos on the structure on the wasm-content check the next section.</p>
 <h4 id="github-pages">Github pages</h4>
-<p>For the GitHub pages to work, the name of the repo must be specified in the config file.</p>
+<p>For the GitHub pages to work, the name of the repo must be specified in the config file. (name of app must match the name of the repo !!)</p>
 <div class="highlight"><pre><span></span><code><span class="nx">app</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">baseURL</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;/Wasm4Learn/&#39;</span><span class="p">,</span>
 <span class="w">    </span><span class="p">...</span>
 <span class="p">}</span>
 <span class="p">,</span>
-</code></pre></div>
-<h2 id="developpement">Developpement</h2>
-<h3 id="install-dependencies">Install dependencies</h3>
-<p>Make sure to install the dependencies:</p>
-<div class="highlight"><pre><span></span><code>yarn<span class="w"> </span>install
-</code></pre></div>
-<h3 id="development-server">Development Server</h3>
-<p>Start the development server on <code>http://localhost:3000</code>:</p>
-<div class="highlight"><pre><span></span><code>yarn<span class="w"> </span>dev
-</code></pre></div>
-<h3 id="production">Production</h3>
-<p>Build the application for production:</p>
-<div class="highlight"><pre><span></span><code>yarn<span class="w"> </span>deploy
 </code></pre></div>
 
 
