@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/compare/v1.0.3...v1.0.4) (2023-09-12)
+
+
+### Bug Fixes
+
+* change the structure in tools content ([09e2dbd](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/commit/09e2dbdd7d3a2b567e468a0c88ea60c575b8a1cd))
+* elaborate on the setup steps in wasm4learn-doc ([910da84](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/commit/910da8400d8780e3329512449b24312ff91c984d))
+
 ## [1.0.3](https://github.com/IFB-ElixirFr/Wasm4Learn-doc/compare/v1.0.2...v1.0.3) (2023-08-30)
 
 
