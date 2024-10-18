@@ -50,7 +50,7 @@ To work locally with this project, you'll have to follow the steps below:
 ```bash
 cd Wasm4Learn-doc
 conda env create -f env_docs.yml
-conda activate docs
+conda activate docs_was4learn
 ```
 
 3. Preview your project

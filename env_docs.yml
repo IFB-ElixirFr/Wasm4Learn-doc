@@ -1,4 +1,4 @@
-name: docs
+name: docs_was4learn
 channels:
   - conda-forge
   - defaults

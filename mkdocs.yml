@@ -27,6 +27,9 @@ markdown_extensions:
 # page tree
 nav:
     - Home: index.md
+    - Learner's guide :
+      - Learner_guide/learner_guide_getting_started.md
+      - Learner_guide/R_interface.md
     - Deployment:
       - Tool: Deployment/deployment_01_tool.md
       - Content: Deployment/deployment_02_content.md
